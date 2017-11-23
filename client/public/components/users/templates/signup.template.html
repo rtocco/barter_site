@@ -1,0 +1,29 @@
+
+<div>
+   <form ng-submit="signUp();" layout="column" layout-align="center center">
+      <h1>Sign Up as a User</h1>
+      <div layout="row">
+         <md-input-container>
+            <input ng-model="first_name" placeholder="First Name"></input>
+         </md-input-container>
+
+         <md-input-container>
+            <input ng-model="last_name" placeholder="Last Name"></input>
+         </md-input-container>
+      </div>
+
+      <div layout="row">
+         <md-input-container>
+            <input ng-model="username" placeholder="Username"></input>
+         </md-input-container>
+
+         <md-input-container>
+            <input type="password" ng-model="password" placeholder="Password"></input>
+         </md-input-container>
+      </div>
+
+      <md-button type="submit" class="md-raised md-primary">Sign Up</md-button>
+
+      <p style="color: red">{{error}}</p>
+   </form>
+</div>

@@ -1,0 +1,15 @@
+
+<div ng-controller="HomeController">
+   <form layout="column" layout-align="center center" ng-submit="signIn();">
+      <h1>Welcome to the website!</h1>
+      <md-input-container>
+         <input ng-model="username" placeholder="Username"></input>
+      </md-input-container>
+      <md-input-container>
+         <input ng-model="password" type="password" placeholder="Password"></input>
+      </md-input-container>
+      <md-button type="submit" class="md-primary md-raised">Sign In</md-button>
+
+      <md-button href="#!/signup" class="md-primary" style="margin-top: 20px;">Create an Account</md-button>
+   </form>
+</div>
